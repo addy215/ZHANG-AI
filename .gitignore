@@ -27,3 +27,8 @@ __pycache__/
 
 # 忽略其他临时文件
 *.swp
+
+# 忽略包含敏感信息的文件
+replace.txt
+test_api_key.py
+
