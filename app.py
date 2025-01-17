@@ -10,6 +10,11 @@ import openai
 # 从环境变量中读取 OpenAI API 密钥
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+# 检查环境变量是否为空
+if openai.api_key is None:
+    st.error("OpenAI API 密钥未设置，请确保环境变量 OPENAI_API_KEY 已正确配置。")
+    st.stop()
+
 # 设置页面标题和说明
 st.title("加密货币多周期分析系统")
 st.markdown("""
