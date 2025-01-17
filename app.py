@@ -16,7 +16,7 @@ if openai.api_key is None:
     st.stop()
 
 # 设置页面标题和说明
-st.title("加密货币多周期分析系统")
+st.title("ZHANG-AI多周期分析系统")
 st.markdown("""
 ### 使用说明
 - 输入交易对代码（例如：BTC、ETH、PEPE等）
